@@ -1,0 +1,65 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #114514;
+}
+
+.login_box{
+    width: 300px;
+    padding: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #000000;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+
+}
+
+.input_box{
+    border: 0;
+    width: 2000px;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 20px solid #22ff00;
+    border-radius: 25px;
+    padding: 14px;
+    outline: none;
+    color: white;
+}
+
+.input_box:focus{
+    border: 0;
+    width: 300px;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 20px solid #dfe6e9;
+    border-radius: 25px;
+    padding: 14px;
+    outline: none;
+    color: white;
+}
+
+.btn{
+    border: 0;
+    width: 100px;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 20px solid #22ff00;
+    border-radius: 25px;
+    padding: 14px;
+    outline: none;
+    color: white;
+}
+
+.btn{
+    background: #009dff; 
+}
