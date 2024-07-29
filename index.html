@@ -1,0 +1,129 @@
+<html>
+    <head></head>
+    <body>
+        <style>   .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }</style>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title>sub</title>
+        <style>
+   body{
+      background-image:url("subbj.png");
+      background-size:cover;
+      background-repeat:no-repeat;
+      background-attachment:fixed;
+    }
+  .loading-button {
+               padding: 10px 20px;
+               font-size: 16px;
+               color: #fff;
+               background-color: #007bff;
+               border: none;
+               border-radius: 5px;
+               cursor: pointer;
+               outline: none;
+               position: relative;
+               overflow: hidden;
+           }
+
+           .loading-button .loading {
+               display: none;
+               position: absolute;
+               top: 50%;
+               left: 50%;
+               transform: translate(-50%, -50%);
+               width: 20px;
+               height: 20px;
+               border: 3px solid rgba(255, 255, 255, 0.3);
+               border-top-color: #fff;
+               border-radius: 50%;
+               animation: spin 1s linear infinite;
+           }
+
+           @keyframes spin {
+               0% { transform: translate(-50%, -50%) rotate(0deg); }
+               100% { transform: translate(-50%, -50%) rotate(360deg); }
+           }
+     
+ </style>
+        <center>
+            <h1>SubUI</h1>
+            <hr> <button class="loading-button" id="loadingButton"> 查看日志 
+                <div class="loading" id="loadingIndicator"></div> </button> <button class="loading-button" id="loadingButton2"> 加入我们的QQ群 
+                <div class="loading" id="loadingIndicator2"></div> </button> <button class="loading-button" id="loadingButtonsubdow"> 下载我们的UI 
+                <div class="loading" id="loadingIndicatorsubdow"></div> </button>
+        </center>
+        <center>
+            <h1><a href="https://v.kuaishou.com/uAW9YT">SubUI Video</a> <p>最新更新图片</p> <img src="sub1.1.3.png" width="50%">
+                <hr></h1>
+            <script>
+
+           document.getElementById('loadingButton').addEventListener('click', function() {
+               var button = this;
+               var loadingIndicator = document.getElementById('loadingIndicator');
+               loadingIndicator.style.display = 'block';
+               button.disabled = true;
+
+               // 模拟异步操作
+               setTimeout(function() {
+                   // 加载完成，隐藏加载动画，跳转到新网站
+                   loadingIndicator.style.display = 'none';
+                   button.disabled = false;
+                  
+                   window.location.href = 'riz.html'; // 替换为你想要跳转的网站
+               }, 1000); // 假设加载时间为2秒
+           });
+         
+         
+         
+         
+         
+         
+         
+         document.getElementById('loadingButton2').addEventListener('click', function() {
+               var button = this;
+               var loadingIndicator2 = document.getElementById('loadingIndicator2');
+               loadingIndicator2.style.display = 'block';
+               button.disabled = true;
+
+               // 模拟异步操作
+               setTimeout(function() {
+                   // 加载完成，隐藏加载动画，跳转到新网站
+                   loadingIndicator2.style.display = 'none';
+                   button.disabled = false;
+                  
+                   window.location.href = 'qqQun.html'; // 替换为你想要跳转的网站
+               }, 1000); // 假设加载时间为2秒
+           });
+         
+         
+         
+         
+         document.getElementById('loadingButtonsubdow').addEventListener('click', function() {
+               var button = this;
+               var loadingIndicatorsubdow = document.getElementById('loadingIndicatorsubdow');
+               loadingIndicatorsubdow.style.display = 'block';
+               button.disabled = true;
+
+               // 模拟异步操作
+               setTimeout(function() {
+                   // 加载完成，隐藏加载动画，跳转到新网站
+                   loadingIndicatorsubdow.style.display = 'none';
+                   button.disabled = false;
+                 
+                   window.location.href = 'download.html'; // 替换为你想要跳转的网站
+               }, 1000); // 假设加载时间为2秒
+           });
+       </script>
+        </center>
+        <div class="footer">
+            <p>版权所有 © NullStudio</p>
+        </div>
+    </body>
+</html>
